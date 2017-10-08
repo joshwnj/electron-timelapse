@@ -14,10 +14,10 @@ This will use up a lot of disk space :) So maybe be careful if you are running l
 
 ## Make a gif
 
-Here's an easy way to do it:
+Here's an easy way to do it with [graphicsmagick](http://www.graphicsmagick.org/):
 
 ```
-convert -delay 10 -loop 0 *.png animation.gif
+gm convert -scale '10%' -delay 1 *.png animation.gif
 ```
 
 [source](https://unix.stackexchange.com/a/24019)
